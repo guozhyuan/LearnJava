@@ -7,7 +7,9 @@
 	2.下载redis redis-4.0.6.tar.gz,解压
   	3.cd redis-4.0.6
     	  make
-  	4.cd src
-    	  make install
-  	5.redis-cluster : 待续 
+	  make install PREFIX=/usr/redis-cluster   //拷贝生成的文件到指定目录
+  	5.redis-cluster : <参考extra/redis-cluster/>
+	  注意:若redis设置了密码，需要在在client.rb中配置该密码.
+	      连接指定节点：redis-cli -p port; auth password;    
+	  
 	
