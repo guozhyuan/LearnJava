@@ -3,6 +3,8 @@
 ```
 apt install ssh
 systemctl start ssh
+// ubuntu need install openssh manual
+apt install openssh-server
 ```
 
 2.修改配置文件
