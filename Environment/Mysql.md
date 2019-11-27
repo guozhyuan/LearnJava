@@ -34,5 +34,5 @@ create user '[user_name]'@'[scope]' identified by 'password';
 flush privileges;
 ```
 2.创建并授权
-grant \[权限\] on \[db_name\].\[table_name\] to 'user_name'@'scope' identified by 'password'
+grant \[权限\] on \[db_name\].\[table_name\] to '\[user_name\]'@'\[scope\]' identified by '\[password\]'
 > 权限为ALL PRIVILEGES或ALL是所有权限，还有单个权限select、update、insert、delete等，单个权限之间用逗号隔开，详细可以查看下mysql.user表的表结构。\[数据库名\].\[表名\]为*.*时表示所有数据库。
